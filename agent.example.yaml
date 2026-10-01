@@ -1,0 +1,23 @@
+chain:
+  id: 56
+  protocol: flap
+wallet:
+  address: CONFIG_REQUIRED
+strategy:
+  minimum_liquidity_bnb: 25
+  watch_volume_momentum: 1.5
+  heuristic_confidence_threshold: 0.70
+risk:
+  max_trade_size_bnb: 0.02
+  max_total_exposure_bnb: 0.10
+  max_token_exposure_bnb: 0.05
+  max_daily_loss_bnb: 0.02
+  cooldown_seconds: 900
+  max_slippage_bps: 300
+  emergency_stop: true
+execution:
+  mode: NO_SIGNER
+  adaptive_multiplier_min: 0.25
+  adaptive_multiplier_max: 1.0
+social:
+  mode: SOCIAL_PUBLISHING_DISABLED
